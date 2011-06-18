@@ -11,9 +11,7 @@
 
 sum = 0
 for num in 1...1000 do
-  if (num % 3) == 0 || (num % 5) == 0
-    sum += num
-  end
+  sum += num if (num % 3) == 0 || (num % 5) == 0
 end
 
 puts "Result: #{sum}"
